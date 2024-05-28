@@ -1,3 +1,4 @@
+import 'dotenv/config'
 import express from 'express' // Importação correta do express
 import 'express-async-errors' // Correção do erro de digitação
 import cors from 'cors'
@@ -12,6 +13,6 @@ app.get('/', (req, res) => {
 })
 
 // Correção da sintaxe da função de callback no listen
-app.listen(3000, () => {
-  console.log('Server started on port 3000!')
+app.listen(process.env.PORT, () => {
+  console.log(`Server started on ${process.env.PORT}!`)
 })
