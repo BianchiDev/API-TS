@@ -20,7 +20,7 @@ app.use((error: any, req: Request, res: Response, next: NextFunction) => {
       message: error.message,
     })
   }
-  console.log(error)
+  console.error(error) // Alterado para console.error para destacar um erro interno
 
   return res.status(500).json({
     status: 'error',

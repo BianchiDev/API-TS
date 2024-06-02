@@ -19,5 +19,6 @@
         "titleBar.inactiveForeground": "#e7e7e799"
     },
     "peacock.remoteColor": "#215732",
-    "DockerRun.DisableDockerrc": true
+    "DockerRun.DisableDockerrc": true,
+    "DockerRun.DisableAutoGenerateConfig": true
 }
