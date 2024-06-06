@@ -1,5 +1,5 @@
 import 'dotenv/config'
-import express, { NextFunction, Request, Response } from 'express'
+import express, { /*NextFunction,*/ Request, Response } from 'express'
 import 'express-async-errors'
 import cors from 'cors'
 import { routes } from './routes'
@@ -13,7 +13,7 @@ app.use(express.json())
 app.use(routes)
 
 // Middleware de tratamento de erros
-app.use((error: any, req: Request, res: Response, next: NextFunction) => {
+app.use((error: any, req: Request, res: Response /*next: NextFunction*/) => {
   if (error instanceof AppError) {
     return res.status(error.statusCode).json({
       status: 'error',
