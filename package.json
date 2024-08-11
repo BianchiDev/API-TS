@@ -2,13 +2,13 @@
   "name": "api-ts",
   "version": "1.0.0",
   "description": "",
-  "main":  "dist/shared/http/server.js",
+  "main": "index.js",
   "scripts": {
     "build": "rimraf dist && npx tsc",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/shared/http/server.ts",
-     "start": "node -r tsconfig-paths/register dist/shared/http/server.js"
+    "start": "index.js"
   },
   "keywords": [],
   "author": "",
