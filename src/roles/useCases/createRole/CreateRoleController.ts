@@ -1,3 +1,7 @@
+import { Request, Response } from 'express'
+
 export class CreateRoleController {
-  handle(res: Request, res: Response)
+  handle(req: Request, res: Response) {
+    res.send('Role criada sucesso!')
+  }
 }
