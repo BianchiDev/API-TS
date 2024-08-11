@@ -2,7 +2,7 @@
   "name": "api-ts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main":  "dist/shared/http/server.js",
   "scripts": {
     "build": "rimraf dist && npx tsc",
     "lint": "eslint .",
